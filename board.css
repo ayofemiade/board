@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    position: relative;
+    background: #f030;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 240px;
+    background: #11101d;
+    top: 0;
+    left: 0;
+    padding: 6px 14px;
+}
+.sidebar .side-content .logo{
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+}
+.logo-content .logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.logo-content .logo .logo-name {
+    font-size: 2.7rem;
+    font-weight: 400;
+}
+.sidebar #btn {
+    position: absolute;
+    color: #fff;
+    left: 80%;
+    top: 6px;
+    font-size: 2rem;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translateX(-50%);
+}
+.sidebar ul {
+    margin-top: 20px;
+}
+.sidebar ul li {
+    position: relative;
+    list-style: none;
+    height: 50px;
+    width: 100%;
+    margin: 0 5px;
+    line-height: 50px;
+}
+.sidebar ul li .search {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background: #1d1b13;
+    padding-left: 50px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+.sidebar ul li #btn2 {
+    position: relative;
+    z-index: 99;
+    color: #fff;
+    font-size: 1.4rem;
+}
+.sidebar ul li a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: all .3s ease;
+}
+.sidebar ul li a:hover {
+    background: #fff;
+    color: #11101d;
+}
+.sidebar ul li i {
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+}
+.sidebar .profile-content {
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+}
+.sidebar.profile-content {
+    position: relative;
+    padding: 10px 6px;
+    height: 60px;
+}
+.sidebar .profile-content .profile-details {
+    display: flex;
+    align-items: center;
+}
+.profile .profile-details img,
+.logo img {
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 12px;
+
+}
