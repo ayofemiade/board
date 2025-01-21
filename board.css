@@ -14,11 +14,11 @@ body {
 }
 .sidebar {
     position: fixed;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 240px;
     background: #11101d;
-    top: 0;
-    left: 0;
     padding: 6px 14px;
 }
 .sidebar .side-content .logo{
@@ -28,19 +28,14 @@ body {
     width: 100%;
     align-items: center;
 }
-.logo-content .logo img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-.logo-content .logo .logo-name {
-    font-size: 2.7rem;
+.side-content .logo .logo-name {
+    font-size: 1.7rem;
     font-weight: 400;
 }
 .sidebar #btn {
     position: absolute;
     color: #fff;
-    left: 80%;
+    left: 90%;
     top: 6px;
     font-size: 2rem;
     height: 50px;
@@ -92,7 +87,20 @@ body {
     background: #fff;
     color: #11101d;
 }
-.sidebar ul li i {
+.sidebar ul li .tool {
+    position: absolute;
+    height: 35px;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 6px;
+    width: 122px;
+    line-height: 35px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.sidebar ul li i{
     height: 50px;
     min-width: 50px;
     border-radius: 12px;
@@ -104,11 +112,13 @@ body {
     color: #fff;
     bottom: 0;
     left: 0;
+    width: 100%;
 }
-.sidebar.profile-content {
+.sidebar .profile-content .profile {
     position: relative;
     padding: 10px 6px;
     height: 60px;
+    background: #1d1b13;
 }
 .sidebar .profile-content .profile-details {
     display: flex;
@@ -116,9 +126,28 @@ body {
 }
 .profile .profile-details img,
 .logo img {
-    height: 45px;
-    width: 45px;
-    object-fit: cover;
+    height: 35px;
+    width: 35px;
+    object-fit: contain;
     border-radius: 12px;
-
+    overflow: hidden;
+}
+.profile .profile-details .name-job {
+    margin-left: 10px;
+}
+.profile .profile-details .name {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.profile .profile-details .job {
+    font-size: 1rem;
+}
+.profile .bx-log-out {
+    position: absolute;
+    left: 85%;
+    bottom: 5px;
+    min-width: 50px;
+    line-height: 50px;
+    font-size: 1.7rem;
+    border-radius: 12px;
 }
